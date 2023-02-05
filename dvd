@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site de Jogos</title>
+  <style>
+    /* Estilo da página */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: purple;
+    }
+
+    .jogo {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      background-color: lightgray;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho da página -->
+  <h1>Bem-vindo ao nosso site de jogos!</h1>
+
+  <!-- Lista de jogos -->
+  <div class="jogo">
+    <h2>Jogo 1</h2>
+    <p>Descrição do jogo 1</p>
+    <button id="jogo1">Jogar</button>
+  </div>
+  <div class="jogo">
+    <h2>Jogo 2</h2>
+    <p>Descrição do jogo 2</p>
+    <button id="jogo2">Jogar</button>
+  </div>
+  <div class="jogo">
+    <h2>Jogo 3</h2>
+    <p>Descrição do jogo 3</p>
+    <button id="jogo3">Jogar</button>
+  </div>
+
+  <!-- JavaScript para adicionar funcionalidade aos botões de jogo -->
+  <script>
+    const jogo1Btn = document.getElementById("jogo1");
+    const jogo2Btn = document.getElementById("jogo2");
+    const jogo3Btn = document.getElementById("jogo3");
+
+    jogo1Btn.addEventListener("click", function() {
+      alert("Você clicou no jogo 1!");
+    });
+
+    jogo2Btn.addEventListener("click", function() {
+      alert("Você clicou no jogo 2!");
+    });
+
+    jogo3Btn.addEventListener("click", function() {
+      alert("Você clicou no jogo 3!");
+    });
+  </script>
+</body>
+</html>
